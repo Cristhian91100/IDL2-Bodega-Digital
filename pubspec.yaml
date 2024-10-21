@@ -1,0 +1,32 @@
+name: bodega_digital
+description: Una aplicación de gestión de productos.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.5  # Versión actual de http compatible con Flutter 3.x
+  provider: ^6.0.0  # Compatible con Flutter 3.x
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0  # Asegúrate de agregar la dependencia de flutter_lints para linting
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: lib/fonts/Roboto-Regular.ttf  
+  assets:
+    - assets/producto1.png
+    - assets/producto2.png
+    - assets/your_cart_icon.png
+
